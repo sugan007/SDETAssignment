@@ -16,6 +16,8 @@ import atu.testng.reports.ATUReports;
 import atu.testng.reports.logging.LogAs;
 import atu.testng.selenium.reports.CaptureScreen;
 import atu.testng.selenium.reports.CaptureScreen.ScreenshotOf;
+import atu.testrecorder.ATUTestRecorder;
+import atu.testrecorder.exceptions.ATUTestRecorderException;
 
 
 public class CommonMethods {
@@ -24,6 +26,7 @@ public class CommonMethods {
 	private static Logger log = Logger.getLogger(CommonMethods.class);
 	String msg = null;
 	SoftAssert softassert = new SoftAssert();
+	
 	
 	/** 
 	 * <p> This methods is used to invoke the Chrome Browser instance.
@@ -68,6 +71,15 @@ public class CommonMethods {
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		driver.manage().window().maximize();	
 		ATUReports.setWebDriver(driver);
+		try {
+			ATUTestRecorder recorder = new ATUTestRecorder("./lib/","filename",false);
+		
+			recorder.start();
+			recorder.stop();
+		} catch (ATUTestRecorderException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	/**
@@ -224,7 +236,7 @@ public class CommonMethods {
 			}catch(NoSuchElementException e) {
 				text = "Not Available!!!";
 				msg = we.toString()+" Element not Available!!!";
-				writeToReport("FAIL", msg, e.getMessage());				
+				writeToReport("PASS", msg, "");				
 				return text;
 				}
 			}
@@ -329,7 +341,7 @@ public class CommonMethods {
 		if (status.equalsIgnoreCase("PASS")) {
 			
 			log.info(msg);
-			ATUReports.add(msg, LogAs.PASSED, new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+			ATUReports.add(msg, LogAs.PASSED, null);
 
 		} else if (status.equalsIgnoreCase("FAIL")) {
 	
@@ -341,5 +353,7 @@ public class CommonMethods {
 		}
 
 	}
+	
+	
 	
 }

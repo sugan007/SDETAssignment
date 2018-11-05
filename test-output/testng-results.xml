@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
     <line>
       <![CDATA[STEP1]]>
@@ -58,13 +58,31 @@
     <line>
       <![CDATA[STEP19]]>
     </line>
+    <line>
+      <![CDATA[STEP20]]>
+    </line>
+    <line>
+      <![CDATA[STEP21]]>
+    </line>
+    <line>
+      <![CDATA[STEP22]]>
+    </line>
+    <line>
+      <![CDATA[STEP23]]>
+    </line>
+    <line>
+      <![CDATA[STEP24]]>
+    </line>
+    <line>
+      <![CDATA[STEP25]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="79760" started-at="2018-10-28T15:47:23Z" finished-at="2018-10-28T15:48:43Z">
+  <suite name="Suite" duration-ms="67701" started-at="2018-11-05T06:31:54Z" finished-at="2018-11-05T06:33:01Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="79760" started-at="2018-10-28T15:47:23Z" finished-at="2018-10-28T15:48:43Z">
+    <test name="Test" duration-ms="67701" started-at="2018-11-05T06:31:54Z" finished-at="2018-11-05T06:33:01Z">
       <class name="testcase.Validation">
-        <test-method status="PASS" signature="setEnvironment(java.lang.String, java.lang.String)[pri:0, instance:testcase.Validation@7f13d6e]" name="setEnvironment" is-config="true" duration-ms="11196" started-at="2018-10-28T15:47:23Z" finished-at="2018-10-28T15:47:34Z">
+        <test-method status="PASS" signature="setEnvironment(java.lang.String, java.lang.String)[pri:0, instance:testcase.Validation@7f13d6e]" name="setEnvironment" is-config="true" duration-ms="16608" started-at="2018-11-05T06:31:54Z" finished-at="2018-11-05T06:32:10Z">
           <params>
             <param index="0">
               <value>
@@ -86,7 +104,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setEnvironment -->
-        <test-method status="PASS" signature="testCase_01(java.lang.String)[pri:1, instance:testcase.Validation@7f13d6e]" name="testCase_01" duration-ms="10134" started-at="2018-10-28T15:47:34Z" finished-at="2018-10-28T15:47:44Z">
+        <test-method status="PASS" signature="testCase_01(java.lang.String)[pri:1, instance:testcase.Validation@7f13d6e]" name="testCase_01" duration-ms="11687" started-at="2018-11-05T06:32:10Z" finished-at="2018-11-05T06:32:22Z">
           <params>
             <param index="0">
               <value>
@@ -118,36 +136,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCase_01 -->
-        <test-method status="FAIL" signature="testCase_02()[pri:0, instance:testcase.Validation@7f13d6e]" name="testCase_02" duration-ms="58410" started-at="2018-10-28T15:47:44Z" depends-on-methods="testcase.Validation.testCase_01" finished-at="2018-10-28T15:48:43Z">
-          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
-            <full-stacktrace>
-              <![CDATA[[ATU Custom Reporter Step Failed Exception]
-at atu.testng.reports.listeners.ATUReportsListener.onTestSuccess(Unknown Source)
-at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:70)
-at org.testng.internal.Invoker.runTestListeners(Invoker.java:1388)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:633)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+        <test-method status="PASS" signature="testCase_02()[pri:0, instance:testcase.Validation@7f13d6e]" name="testCase_02" duration-ms="39374" started-at="2018-11-05T06:32:22Z" depends-on-methods="testcase.Validation.testCase_01" finished-at="2018-11-05T06:33:01Z">
           <reporter-output>
             <line>
               <![CDATA[STEP10]]>
@@ -178,6 +167,24 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
             <line>
               <![CDATA[STEP19]]>
+            </line>
+            <line>
+              <![CDATA[STEP20]]>
+            </line>
+            <line>
+              <![CDATA[STEP21]]>
+            </line>
+            <line>
+              <![CDATA[STEP22]]>
+            </line>
+            <line>
+              <![CDATA[STEP23]]>
+            </line>
+            <line>
+              <![CDATA[STEP24]]>
+            </line>
+            <line>
+              <![CDATA[STEP25]]>
             </line>
           </reporter-output>
         </test-method> <!-- testCase_02 -->
