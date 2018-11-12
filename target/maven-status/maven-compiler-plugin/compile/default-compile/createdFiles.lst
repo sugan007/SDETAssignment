@@ -1,0 +1,5 @@
+page\SearchResultsOf_BooksCategory_Page.class
+page\SearchResultsOf_BooksCategory_Page$Book.class
+page\HomePage.class
+core\CommonMethods.class
+page\BasePage.class
